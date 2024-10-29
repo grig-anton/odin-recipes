@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Skranji:wght@400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+:root {
+  --white: #fffcdf;
+  --red: #d33905;
+}
+
+* {
+  color: var(--white);
+  text-decoration: none;
+}
+
+a,
+p {
+  font-family: "Skranji", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: max(2vw);
+}
+
+a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--red);
+  border-radius: 10vw;
+  max-width: 50vw;
+  padding: 1rem 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Caesar Dressing", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 0;
+}
+
+h1,
+h2 {
+  font-size: 8vw;
+}
+
+h3 {
+  font-size: 1.8vw;
+  line-height: normal;
+}
+
+.hero {
+  background-position: center;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url(images/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-second {
+  padding: 5em 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url(images/secondary-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max(40vw);
+  text-align: center;
+  gap: 2vw;
+}
+.hero-text p {
+  font-size: max(1vw, 20px);
+}
+
+.recipe-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: min(5em);
+}
+
+.recipe-box {
+  min-width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(156, 39, 0, 0.7);
+  border-radius: 30px;
+  padding: 2em;
+  gap: 1em;
+}
+
+.img-recipe {
+  border-radius: 50%;
+  width: 13em;
+  height: 13em;
+  object-fit: cover;
+}
+
+.recipe-box a {
+  font-size: min(1.5vw);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--red);
+  border-radius: 10vw;
+  max-width: 50vw;
+  padding: 1rem 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .hero-text {
+    width: min(80vw);
+  }
+
+  .recipe-section {
+    flex-direction: column;
+  }
+
+  a {
+    font-size: min(5vw);
+  }
+
+  h3 {
+    font-size: 6vw;
+  }
+
+  .recipe-box a {
+    font-size: min(5vw);
+  }
+
+  .recipe-box {
+    min-width: 5vw;
+  }
+}

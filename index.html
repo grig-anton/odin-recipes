@@ -3,28 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Odin Recipes</title>
   </head>
-  <body
-    style="
-      max-width: 500px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-    "
-  >
-    <img
-      style="max-width: 300px; padding: 2em 0"
-      src="images/odin-cooking.jpeg"
-      alt="Odin is Cooking"
-    />
-    <h1>Odin Recipes</h1>
+  <body>
+    <!-- Hero Section -->
 
-    <ul>
-      <li><a href="recipes/french-fries.html">Chef John's French Fries</a></li>
-      <li><a href="recipes/french-fries.html">Asparagus and Eggs</a></li>
-      <li><a href="recipes/french-fries.html">Crustless Grilled Cheese</a></li>
-    </ul>
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Odin Recipes</h1>
+        <p>
+          Welcome to Odin Recipes—where modern cooking meets Norse-inspired
+          adventure. Discover bold, flavorful dishes crafted with a touch of
+          Viking spirit, guiding you to create unforgettable meals in your own
+          kitchen.
+        </p>
+        <a href="#recipes">
+          <img
+            style="max-width: 50px; margin: 0 15px 0 0"
+            src="images/norse-icon.png"
+            alt="Norse Icon"
+          />
+          VIEW RECIPES</a
+        >
+      </div>
+    </div>
+
+    <!-- End Hero Section -->
+
+    <!-- 2nd Section -->
+
+    <div id="recipes" class="hero-second">
+      <div class="recipe-section">
+        <!-- French Fries -->
+
+        <div class="recipe-box">
+          <img class="img-recipe" src="images/french-fries.jpeg" alt="Recipe" />
+          <h3>French Fries</h3>
+          <a href="recipes/french-fries.html">VIEW RECIPE</a>
+        </div>
+
+        <!-- Asparagus and Eggs -->
+
+        <div class="recipe-box">
+          <img
+            class="img-recipe"
+            src="images/asparagus-and-eggs.jpeg"
+            alt="Recipe"
+          />
+          <h3>Asparagus and Eggs</h3>
+          <a href="recipes/asparagus-eggs.html">VIEW RECIPE</a>
+        </div>
+
+        <!-- Grilled Cheese -->
+
+        <div class="recipe-box">
+          <img
+            class="img-recipe"
+            src="images/grilled-cheese.jpg"
+            alt="Recipe"
+          />
+          <h3>Crustless Grilled Cheese</h3>
+          <a href="recipes/grilled-cheese.html">VIEW RECIPE</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of 2nd Section  -->
   </body>
 </html>
